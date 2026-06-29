@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Loader2 } from 'lucide-react';
-import { toast } from 'sonner';
+import { useToast } from '@/components/ui/use-toast';
 import SectionLabel from './SectionLabel';
 
 export default function ContactSection() {
+  const { toast } = useToast();
   const [form, setForm] = useState({ name: '', email: '', company: '', message: '' });
   const [errors, setErrors] = useState({});
   const [sending, setSending] = useState(false);
@@ -30,7 +31,7 @@ export default function ContactSection() {
     setSending(true);
     await new Promise((r) => setTimeout(r, 1200));
     setSending(false);
-    toast.success("Message sent! We'll get back to you shortly.");
+    toast({ title: "Message sent!", description: "We'll get back to you shortly." });
     setForm({ name: '', email: '', company: '', message: '' });
   };
 

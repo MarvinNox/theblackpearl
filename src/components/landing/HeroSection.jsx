@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useMemo } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Eye } from 'lucide-react';
 import * as THREE from 'three';

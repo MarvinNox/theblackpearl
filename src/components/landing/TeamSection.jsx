@@ -1,5 +1,3 @@
-const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
-
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import SectionLabel from './SectionLabel';
@@ -44,7 +42,7 @@ export default function TeamSection() {
         <div className="border-t border-foreground/10">
           {team.map((member, i) => (
             <motion.div
-              key={i}
+              key={member.name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

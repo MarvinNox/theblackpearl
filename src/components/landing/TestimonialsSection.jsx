@@ -96,9 +96,9 @@ export default function TestimonialsSection() {
 
         {/* Progress dots */}
         <div className="flex gap-2 mt-12">
-          {testimonials.map((_, i) => (
+          {testimonials.map((t, i) => (
             <button
-              key={i}
+              key={t.name}
               onClick={() => setActive(i)}
               className={`h-px transition-all duration-300 ${i === active ? 'w-10 bg-foreground/60' : 'w-4 bg-foreground/15'}`}
               aria-label={`Go to testimonial ${i + 1}`}
