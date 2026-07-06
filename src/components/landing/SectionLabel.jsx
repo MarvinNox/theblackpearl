@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 /**
  * Reusable section label + optional heading block.
@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
  * heading   — optional large h2
  * className — extra classes on the wrapper
  */
-export default function SectionLabel({ label, heading, className = '' }) {
+export default function SectionLabel({ label, heading, className = "" }) {
   return (
     <div className={`mb-16 ${className}`}>
       <motion.div
@@ -17,7 +17,7 @@ export default function SectionLabel({ label, heading, className = '' }) {
         transition={{ duration: 0.6 }}
         className="flex items-center gap-3 mb-4"
       >
-        <div className="w-1.5 h-1.5 rounded-full bg-mercury flex-shrink-0" />
+        {/* <div className="w-1.5 h-1.5 rounded-full bg-mercury flex-shrink-0" /> */}
         <span className="font-mono text-xs tracking-widest uppercase text-mercury">
           {label}
         </span>
