@@ -1,10 +1,13 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import SectionLabel from './SectionLabel';
+import React from "react";
+import { motion } from "framer-motion";
+import SectionLabel from "./SectionLabel";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="relative py-32 md:py-44 px-6 md:px-10 bg-void">
+    <section
+      id="about"
+      className="relative py-32 md:py-44 px-6 md:px-10 bg-void"
+    >
       <div className="max-w-[1440px] mx-auto">
         <SectionLabel label="Who we are" />
 
@@ -16,7 +19,8 @@ export default function AboutSection() {
           transition={{ duration: 0.8 }}
           className="font-heading font-semibold text-[clamp(1.5rem,3.5vw,3rem)] leading-[1.2] tracking-tight text-pearl max-w-5xl"
         >
-          We're a small team of creatives and developers partnering with clients worldwide to build thoughtful digital experiences
+          We're a small team of creatives and developers partnering with clients
+          worldwide to build thoughtful digital experiences
         </motion.p>
 
         {/* Supporting text */}
@@ -27,7 +31,8 @@ export default function AboutSection() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mt-8 font-body text-base md:text-lg leading-relaxed text-mercury max-w-2xl"
         >
-          We choose depth over volume, fast collaboration over endless calls, and solutions that move businesses forward.
+          We choose depth over volume, fast collaboration over endless calls,
+          and solutions that move businesses forward.
         </motion.p>
 
         {/* Decorative line */}
