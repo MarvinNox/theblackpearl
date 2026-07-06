@@ -9,15 +9,17 @@ export const projects = [
     category: "Landing Page · Branding",
     country: "Ukraine",
     image:
-      "https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/11bbe76c5_generated_10be0da1.png",
+      "https://res.cloudinary.com/marvin-nox/image/upload/v1783337458/Frame_21_p0aazp.png",
+    url: "https://hillsavenue.com.ua/",
   },
   {
     id: "tenjou-studio",
     title: "Tenjou Studio",
-    category: "E-Commerce · Web App",
-    country: "Italy",
+    category: "Landing Page · Branding",
+    country: "Portugal",
     image:
-      "https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/1c7d6715e_generated_446e1132.png",
+      "https://res.cloudinary.com/marvin-nox/image/upload/v1783337456/Frame_24_bczb9c.png",
+    url: "https://tenjoustudio.com/",
   },
   {
     id: "cochefy",
@@ -25,31 +27,8 @@ export const projects = [
     category: "Mobile App · UX Research",
     country: "Germany",
     image:
-      "https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/85f58e2e9_generated_1f830d91.png",
-  },
-  {
-    id: "tenjou-studio-pt",
-    title: "Tenjou Studio",
-    category: "Custom CMS · Development",
-    country: "Portugal",
-    image:
-      "https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/1fd8834c8_generated_88a5ddf3.png",
-  },
-  {
-    id: "aether-sound",
-    title: "Aether Sound",
-    category: "Landing Page · Performance",
-    country: null,
-    image:
-      "https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/5936f6690_generated_6239afdf.png",
-  },
-  {
-    id: "void-architecture",
-    title: "Void Architecture",
-    category: "Full Platform · Design System",
-    country: null,
-    image:
-      "https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/5bd10915a_generated_eade7ca2.png",
+      "https://res.cloudinary.com/marvin-nox/image/upload/v1783337455/image_2_nowxvh.png",
+    url: "https://www.cochefy.io/",
   },
 ];
 
@@ -97,9 +76,15 @@ export default function PortfolioSection() {
                         </p>
                       )}
                     </div>
-                    <div className="w-9 h-9 rounded-full border border-foreground/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+                    <a
+                      href={project.url}
+                      aria-label={project.title}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-9 h-9 rounded-full border border-foreground/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0"
+                    >
                       <ArrowUpRight className="w-4 h-4 text-pearl" />
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>

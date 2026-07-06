@@ -19,15 +19,6 @@ const pins = [
     y: 394,
   },
   {
-    id: "tenjou-studio",
-    project: "Tenjou Studio",
-    country: "Italy",
-    countryCode: "it",
-    category: "E-Commerce · Web App",
-    x: 432,
-    y: 416,
-  },
-  {
     id: "cochefy",
     project: "Cochefy",
     country: "Germany",

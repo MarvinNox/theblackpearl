@@ -1,23 +1,26 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import SectionLabel from './SectionLabel';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import SectionLabel from "./SectionLabel";
 
 const testimonials = [
   {
-    quote: "The Black Pearl delivered beyond expectations. The design was sharp, delivery was on time, and the team communicated clearly every step of the way.",
-    name: "Marco Ferretti",
+    quote:
+      "The Black Pearl delivered beyond expectations. The design was sharp, delivery was on time, and the team communicated clearly every step of the way.",
+    name: "Jacopo Marchesoni",
     role: "CEO, Tenjou Studio",
-    country: "Italy",
+    country: "Portugal",
   },
   {
-    quote: "Working with them felt like having an in-house team. They understood our brand instantly and translated it into a product our customers love.",
-    name: "Anna Kovalenko",
+    quote:
+      "Working with them felt like having an in-house team. They understood our brand instantly and translated it into a product our customers love.",
+    name: "Igor Chernukhin",
     role: "Founder, Hills Avenue",
     country: "Ukraine",
   },
   {
-    quote: "Fast, professional, and deeply thoughtful in their approach. Cochefy's app wouldn't be what it is without their UX expertise.",
+    quote:
+      "Fast, professional, and deeply thoughtful in their approach. Cochefy's app wouldn't be what it is without their UX expertise.",
     name: "Felix Braun",
     role: "Product Lead, Cochefy",
     country: "Germany",
@@ -27,8 +30,10 @@ const testimonials = [
 export default function TestimonialsSection() {
   const [active, setActive] = useState(0);
 
-  const prev = () => setActive((i) => (i === 0 ? testimonials.length - 1 : i - 1));
-  const next = () => setActive((i) => (i === testimonials.length - 1 ? 0 : i + 1));
+  const prev = () =>
+    setActive((i) => (i === 0 ? testimonials.length - 1 : i - 1));
+  const next = () =>
+    setActive((i) => (i === testimonials.length - 1 ? 0 : i + 1));
 
   const t = testimonials[active];
 
@@ -49,7 +54,10 @@ export default function TestimonialsSection() {
                 transition={{ duration: 0.4 }}
               >
                 {/* Opening quote mark */}
-                <div className="font-heading text-[6rem] leading-none text-foreground/10 select-none mb-4" aria-hidden="true">
+                <div
+                  className="font-heading text-[6rem] leading-none text-foreground/10 select-none mb-4"
+                  aria-hidden="true"
+                >
                   "
                 </div>
 
@@ -60,8 +68,12 @@ export default function TestimonialsSection() {
                 <div className="mt-8 flex items-center gap-4">
                   <div className="w-px h-8 bg-foreground/20" />
                   <div>
-                    <p className="font-heading font-semibold text-sm text-pearl">{t.name}</p>
-                    <p className="font-mono text-xs tracking-wider text-mercury mt-0.5">{t.role} · {t.country}</p>
+                    <p className="font-heading font-semibold text-sm text-pearl">
+                      {t.name}
+                    </p>
+                    <p className="font-mono text-xs tracking-wider text-mercury mt-0.5">
+                      {t.role} · {t.country}
+                    </p>
                   </div>
                 </div>
               </motion.div>
@@ -72,7 +84,8 @@ export default function TestimonialsSection() {
           <div className="flex items-center gap-3 md:flex-col md:items-end">
             {/* Counter */}
             <span className="font-mono text-xs text-mercury tracking-wider mr-2 md:mr-0 md:mb-4">
-              {String(active + 1).padStart(2, '0')} / {String(testimonials.length).padStart(2, '0')}
+              {String(active + 1).padStart(2, "0")} /{" "}
+              {String(testimonials.length).padStart(2, "0")}
             </span>
 
             <div className="flex gap-2">
@@ -100,7 +113,7 @@ export default function TestimonialsSection() {
             <button
               key={i}
               onClick={() => setActive(i)}
-              className={`h-px transition-all duration-300 ${i === active ? 'w-10 bg-foreground/60' : 'w-4 bg-foreground/15'}`}
+              className={`h-px transition-all duration-300 ${i === active ? "w-10 bg-foreground/60" : "w-4 bg-foreground/15"}`}
               aria-label={`Go to testimonial ${i + 1}`}
             />
           ))}
