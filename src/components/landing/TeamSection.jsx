@@ -1,34 +1,37 @@
-const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
-
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import SectionLabel from './SectionLabel';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import SectionLabel from "./SectionLabel";
 
 const team = [
   {
-    role: 'Project Manager',
-    name: 'Sofia Marchetti',
-    photo: 'https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/bc214018c_generated_image.png',
+    role: "Project Manager",
+    name: "Sofia Marchetti",
+    photo:
+      "https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/bc214018c_generated_image.png",
   },
   {
-    role: 'Frontend Developer',
-    name: 'Liam Novak',
-    photo: 'https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/b5e0a6326_generated_image.png',
+    role: "Frontend Developer",
+    name: "Liam Novak",
+    photo:
+      "https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/b5e0a6326_generated_image.png",
   },
   {
-    role: 'Backend Developer',
-    name: 'Marcus Rein',
-    photo: 'https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/e55077699_generated_image.png',
+    role: "Backend Developer",
+    name: "Marcus Rein",
+    photo:
+      "https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/e55077699_generated_image.png",
   },
   {
-    role: 'Backend Developer',
-    name: 'Daniel Ostroff',
-    photo: 'https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/d1530ed72_generated_image.png',
+    role: "Backend Developer",
+    name: "Daniel Ostroff",
+    photo:
+      "https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/d1530ed72_generated_image.png",
   },
   {
-    role: 'UX/UI Designer',
-    name: 'Elina Park',
-    photo: 'https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/165c2c2d8_generated_image.png',
+    role: "UX/UI Designer",
+    name: "Elina Park",
+    photo:
+      "https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/165c2c2d8_generated_image.png",
   },
 ];
 
@@ -36,7 +39,10 @@ export default function TeamSection() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section id="team" className="relative py-32 md:py-44 px-6 md:px-10 bg-void">
+    <section
+      id="team"
+      className="relative py-32 md:py-44 px-6 md:px-10 bg-void"
+    >
       <div className="max-w-[1440px] mx-auto">
         <SectionLabel label="Who builds it" heading="The team" />
 
@@ -68,7 +74,7 @@ export default function TeamSection() {
                       src={member.photo}
                       alt={member.name}
                       className="w-full h-full object-cover object-top"
-                      style={{ filter: 'brightness(0.18) saturate(0.3)' }}
+                      style={{ filter: "brightness(0.18) saturate(0.3)" }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/60 to-background/80" />
                   </motion.div>
@@ -78,16 +84,20 @@ export default function TeamSection() {
               {/* Row content */}
               <div className="relative z-10 flex items-center justify-between gap-6 py-8 md:py-10 px-2">
                 {/* Role */}
-                <span className={`font-mono text-xs md:text-sm tracking-widest uppercase transition-colors duration-300 ${
-                  hoveredIndex === i ? 'text-mercury' : 'text-foreground/30'
-                }`}>
+                <span
+                  className={`font-mono text-xs md:text-sm tracking-widest uppercase transition-colors duration-300 ${
+                    hoveredIndex === i ? "text-mercury" : "text-foreground/30"
+                  }`}
+                >
                   {member.role}
                 </span>
 
                 {/* Name */}
-                <span className={`font-heading font-semibold text-2xl md:text-4xl tracking-tight transition-colors duration-300 text-right ${
-                  hoveredIndex === i ? 'text-pearl' : 'text-foreground/60'
-                }`}>
+                <span
+                  className={`font-heading font-semibold text-2xl md:text-4xl tracking-tight transition-colors duration-300 text-right ${
+                    hoveredIndex === i ? "text-pearl" : "text-foreground/60"
+                  }`}
+                >
                   {member.name}
                 </span>
               </div>
@@ -107,7 +117,7 @@ export default function TeamSection() {
                       src={member.photo}
                       alt={member.name}
                       className="w-full h-full object-cover object-top"
-                      style={{ borderLeft: '1px solid rgba(255,255,255,0.06)' }}
+                      style={{ borderLeft: "1px solid rgba(255,255,255,0.06)" }}
                     />
                   </motion.div>
                 )}
