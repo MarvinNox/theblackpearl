@@ -1,8 +1,8 @@
-**Welcome to your Base44 project**
+**Welcome to your Base44 project** 
 
 **About**
 
-View and Edit your app on [db.com](http://db.com)
+View and Edit  your app on [db.com](http://db.com) 
 
 This project contains everything you need to run your app locally.
 
@@ -10,9 +10,9 @@ This project contains everything you need to run your app locally.
 
 Any change pushed to the repo will also be reflected in the Base44 Builder.
 
-**Prerequisites:**
+**Prerequisites:** 
 
-1. Clone the repository using the project's Git URL
+1. Clone the repository using the project's Git URL 
 2. Navigate to the project directory
 3. Install dependencies: `npm install`
 4. Create an `.env.local` file and set the right environment variables
@@ -20,4 +20,3 @@ Any change pushed to the repo will also be reflected in the Base44 Builder.
 ```
 VITE_BASE44_APP_ID=your_app_id
 VITE_BASE44_APP_BASE_URL=your_backend_url
-```
