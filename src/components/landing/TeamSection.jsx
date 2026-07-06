@@ -5,33 +5,30 @@ import SectionLabel from "./SectionLabel";
 const team = [
   {
     role: "Project Manager",
-    name: "Sofia Marchetti",
+    name: "Ihor Torshyn",
     photo:
-      "https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/bc214018c_generated_image.png",
+      "https://res.cloudinary.com/marvin-nox/image/upload/v1783338493/b2f6935b-dfa0-481b-b268-5f5d06884858_fobe6s.jpg",
   },
   {
-    role: "Frontend Developer",
-    name: "Liam Novak",
-    photo:
-      "https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/b5e0a6326_generated_image.png",
+    role: "Developer",
+    name: "Sofia Kindratyshyn",
+    photo: "https://avatars.githubusercontent.com/u/187766232?v=4",
   },
   {
-    role: "Backend Developer",
-    name: "Marcus Rein",
-    photo:
-      "https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/e55077699_generated_image.png",
+    role: "Developer",
+    name: "Denys Tkachenko",
+    photo: "https://avatars.githubusercontent.com/u/90721671?v=4",
   },
   {
-    role: "Backend Developer",
-    name: "Daniel Ostroff",
-    photo:
-      "https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/d1530ed72_generated_image.png",
+    role: "Developer",
+    name: "Daniyl",
+    photo: "https://avatars.githubusercontent.com/u/110613193?v=4",
   },
   {
     role: "UX/UI Designer",
-    name: "Elina Park",
+    name: "Kateryna Honska",
     photo:
-      "https://media.db.com/images/public/6a087fdf2c70eb41f2dc8670/165c2c2d8_generated_image.png",
+      "https://res.cloudinary.com/marvin-nox/image/upload/v1783338492/ea723485-64ba-4429-9c2c-a79500672e42_foxoii.jpg",
   },
 ];
 
