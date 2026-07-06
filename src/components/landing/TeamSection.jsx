@@ -16,13 +16,14 @@ const team = [
   },
   {
     role: "Developer",
-    name: "Denys Tkachenko",
-    photo: "https://avatars.githubusercontent.com/u/90721671?v=4",
+    name: "Danyil Hnatiuk-Shapova",
+    photo:
+      "https://res.cloudinary.com/marvin-nox/image/upload/v1783357785/5359819044963425720_xs79fr.jpg",
   },
   {
     role: "Developer",
-    name: "Daniyl",
-    photo: "https://avatars.githubusercontent.com/u/110613193?v=4",
+    name: "Denys Tkachenko",
+    photo: "https://avatars.githubusercontent.com/u/90721671?v=4",
   },
   {
     role: "UX/UI Designer",
