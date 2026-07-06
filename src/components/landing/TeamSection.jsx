@@ -16,7 +16,7 @@ const team = [
   },
   {
     role: "Developer",
-    name: "Danyil Hnatiuk-Shapova",
+    name: "Danyil Hnatiuk-Shapoval",
     photo:
       "https://res.cloudinary.com/marvin-nox/image/upload/v1783357785/5359819044963425720_xs79fr.jpg",
   },
